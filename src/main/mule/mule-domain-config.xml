@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain:mule-domain
+        xmlns:http="http://www.mulesoft.org/schema/mule/http"
+        xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+        xmlns="http://www.mulesoft.org/schema/mule/core"
+        xmlns:domain="http://www.mulesoft.org/schema/mule/ee/domain"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xsi:schemaLocation="
+               http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+               http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="d4c4bf97-6a0c-4812-b3b7-6531fbbd53a4" >
+		<salesforce:basic-connection username="bhanukprakash@apisero.com" password="Prakash@1_fvg" securityToken="2bwOrfpCPqThdTp9bNJAMshL" url="https://login.salesforce.com/services/Soap/u/52.0" />
+	</salesforce:sfdc-config>
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="544c9610-75e8-4db0-be65-26ddbbc4c920" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+
+
+</domain:mule-domain>
